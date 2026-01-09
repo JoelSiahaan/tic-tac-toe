@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toe.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="game-container">
+        <h2 class="title">Tic Tac <span class="highlight">Toe</span></h2>
+
+        <div class="scoreboard">
+            <div id="scoreX" class="score-card active">
+                <span class="player-label">Player X</span>
+                <span id="scoreP1" class="score-value">0</span>
+            </div>
+            <div id="scoreO" class="score-card">
+                <span class="player-label">Player O</span>
+                <span id="scoreP2" class="score-value">0</span>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="cell" id="1" onclick="handleClick(1)"></div>
+            <div class="cell" id="2" onclick="handleClick(2)"></div>
+            <div class="cell" id="3" onclick="handleClick(3)"></div>
+            <div class="cell" id="4" onclick="handleClick(4)"></div>
+            <div class="cell" id="5" onclick="handleClick(5)"></div>
+            <div class="cell" id="6" onclick="handleClick(6)"></div>
+            <div class="cell" id="7" onclick="handleClick(7)"></div>
+            <div class="cell" id="8" onclick="handleClick(8)"></div>
+            <div class="cell" id="9" onclick="handleClick(9)"></div>
+        </div>
+
+        <div id="status-message" class="status-text"></div>
+
+        <div class="controls">
+            <button class="btn btn-reset" onclick="reset()">Reset Board</button>
+            <button class="btn btn-new" onclick="newGame()">New Series</button>
+        </div>
+    </div>
+
+    <script src="tac.js"></script>
+</body>
+</html>
